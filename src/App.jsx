@@ -51,7 +51,7 @@ const Home = () => (
 );
 
 const Projects = () => (
-  <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} className="bg-[#0b1f33] text-white min-h-screen pt-32 pb-20 px-4$1">
+  <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} className="bg-[#0b1f33] text-white min-h-screen pt-32 pb-20 px-4">
     <motion.h1 className="text-4xl font-bold text-center mb-8" initial={{ y: -40, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.4, duration: 0.8 }}>
       My Projects
     </motion.h1>

@@ -62,7 +62,7 @@ const Home = () => (
 
 const Projects = () => (
   <PageWrapper>
-    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} className="bg-[#0b1f33] text-white min-h-screen pt-32 pb-20 px-4">
+    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}  className="bg-white/10 backdrop-blur-md p-6 rounded-lg shadow-md border border-white/10">
       <motion.h1 className="text-4xl font-bold text-center mb-8" initial={{ y: -40, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.4, duration: 0.8 }}>
         My Projects
       </motion.h1>
@@ -96,7 +96,7 @@ const Projects = () => (
 
 const ProjectTodo = () => (
   <PageWrapper>
-    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} className="bg-[#0b1f33] text-white min-h-screen pt-32 px-4">
+    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}  className="bg-white/10 backdrop-blur-md p-6 rounded-lg shadow-md border border-white/10">
       <motion.h1 className="text-4xl font-bold text-center mb-6" initial={{ y: -40, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.4, duration: 0.8 }}>
         TufferUp
       </motion.h1>
@@ -118,7 +118,7 @@ const ProjectTodo = () => (
 
   const ProjectWeather = () => (
     <PageWrapper>
-      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} className="bg-[#0b1f33] text-white min-h-screen pt-32 px-4">
+      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}  className="bg-white/10 backdrop-blur-md p-6 rounded-lg shadow-md border border-white/10">
         <motion.h1 className="text-4xl font-bold text-center mb-6" initial={{ y: -40, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.4, duration: 0.8 }}>
           LeadChecker
         </motion.h1>
@@ -140,7 +140,7 @@ const ProjectTodo = () => (
 
   const About = () => (
     <PageWrapper>
-      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} className="bg-[#0b1f33] text-white min-h-screen pt-32 pb-20 px-4 text-center">
+      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}  className="bg-white/10 backdrop-blur-md p-6 rounded-lg shadow-md border border-white/10">
         <motion.h1 className="text-4xl font-bold mb-4" initial={{ y: -40, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.3, duration: 0.8 }}>
           About Me
         </motion.h1>
@@ -161,7 +161,7 @@ const ProjectTodo = () => (
 
   const Skills = () => (
     <PageWrapper>
-      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} className="bg-[#0b1f33] text-white min-h-screen pt-32 pb-20 px-4 text-center">
+      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}  className="bg-white/10 backdrop-blur-md p-6 rounded-lg shadow-md border border-white/10">
         <motion.h1 className="text-4xl font-bold mb-6" initial={{ y: -40, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.3, duration: 0.8 }}>
           My Skills
         </motion.h1>
@@ -194,7 +194,7 @@ const ProjectTodo = () => (
 
   const Contact = () => (
     <PageWrapper>
-      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} className="bg-[#0b1f33] text-white min-h-screen pt-32 px-4 text-center">
+      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}  className="bg-white/10 backdrop-blur-md p-6 rounded-lg shadow-md border border-white/10">
         <motion.h1 className="text-4xl font-bold mb-6" initial={{ y: -40, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.3, duration: 0.8 }}>
           Contact Me
         </motion.h1>

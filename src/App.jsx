@@ -62,18 +62,20 @@ const Home = () => (
 
 const Projects = () => (
   <PageWrapper>
-    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}  className="bg-white/20 text-white backdrop-blur-md p-6 rounded-lg shadow-md border border-white/10">
-      <motion.h1 className="text-4xl font-bold text-center mb-8" initial={{ y: -40, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.4, duration: 0.8 }}>
+      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}  className="bg-white/20 text-white backdrop-blur-md p-6 rounded-lg shadow-md border border-white/10">
+        <motion.h1 className="text-4xl font-bold mb-4" initial={{ y: -40, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.3, duration: 0.8 }}>
         My Projects
       </motion.h1>
 
       <div className="max-w-4xl mx-auto space-y-10">
-        <motion.div className="bg-white/20 text-white backdrop-blur-md p-6 rounded-lg shadow-md border border-white/10" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.6, duration: 0.8 }}>
-          <h2 className="text-2xl font-semibold mb-2 text-yellow-300">TufferUp</h2>
+          <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}  className="bg-white/20 text-white backdrop-blur-md p-6 rounded-lg shadow-md border border-white/10">
+          <motion.h1 className="text-4xl font-bold text-center mb-6" initial={{ y: -40, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.4, duration: 0.8 }}>
+            LeadChecker
+          </motion.h1>
           <p className="text-gray-300 mb-4">A full-featured, CSUF-student-specific marketplace built using a modern Vue + Node stack with real-time chat and notifications.</p>
           
-          <h3 className="text-lg font-bold text-white mb-1">Technologies Used</h3>
-          <ul className="list-disc list-inside text-gray-400 text-sm mb-4 space-y-1">
+          <h2 className="text-2xl font-semibold text-yellow-300 mb-2">Technologies Used</h2>
+          <ul className="list-disc list-inside space-y-1 text-sm">
             <li><strong>Frontend:</strong> Vue.js 3 + Vite, Vue Router, Pinia, Axios</li>
             <li><strong>Backend:</strong> Node.js + Express.js, MongoDB Atlas (via Mongoose)</li>
             <li><strong>Authentication:</strong> Passport.js, express-session, MongoDB session store</li>
@@ -82,8 +84,8 @@ const Projects = () => (
             <li><strong>Search:</strong> MongoDB Atlas Search (aggregate().search())</li>
           </ul>
 
-          <h3 className="text-lg font-bold text-white mb-1">Challenges Faced</h3>
-          <ul className="list-disc list-inside text-gray-400 text-sm mb-4 space-y-1">
+          <h2 className="text-2xl font-semibold text-yellow-300 mt-6 mb-2">Challenges Faced</h2>
+          <ul className="list-disc list-inside space-y-1 text-sm">
             <li>CSUF-only email registration using Mongoose pre-save hook</li>
             <li>Image uploads via Base64, managed in a separate model</li>
             <li>Cross-origin sessions with CORS config and credentialed Axios requests</li>
@@ -91,8 +93,8 @@ const Projects = () => (
             <li>Push notification token management using FCM</li>
           </ul>
 
-          <h3 className="text-lg font-bold text-white mb-1">Outcomes</h3>
-          <ul className="list-disc list-inside text-gray-400 text-sm space-y-1">
+          <h2 className="text-2xl font-semibold text-yellow-300 mt-6 mb-2">Outcomes</h2>
+          <ul className="list-disc list-inside space-y-1 text-sm">
             <li>Users can register/login, create listings with images, search, and chat</li>
             <li>Separated concerns between frontend and backend for scalability</li>
             <li>Agile collaboration using clear dev roles (Scrum Master, QA, etc.)</li>

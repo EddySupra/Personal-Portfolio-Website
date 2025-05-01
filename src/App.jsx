@@ -264,7 +264,7 @@ const ProjectTodo = () => (
           My Skills
         </motion.h1>
         <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
-          <div className="bg-white/20 text-black backdrop-blur-md p-6 rounded-lg shadow-md border border-white/10">
+          <div className="bg-white/20 text-white backdrop-blur-md p-6 rounded-lg shadow-md border border-white/10">
             <h2 className="text-2xl font-semibold mb-4 text-yellow-300">Technical Skills</h2>
             <ul className="list-disc list-inside text-white-300 space-y-2 text-sm">
               <li><strong>Programming & Scripting:</strong> Python, C++, C#, JavaScript, R, Lua</li>
@@ -275,7 +275,7 @@ const ProjectTodo = () => (
               <li><strong>Visualization:</strong> Jupyter, Tableau, Power BI, Post-processing Effects</li>
             </ul>
           </div>
-          <div className="bg-white/20 text-black backdrop-blur-md p-6 rounded-lg shadow-md border border-white/10">
+          <div className="bg-white/20 text-white backdrop-blur-md p-6 rounded-lg shadow-md border border-white/10">
             <h2 className="text-2xl font-semibold mb-4 text-yellow-300">Soft Skills</h2>
             <ul className="list-disc list-inside text-white-300 space-y-2 text-sm">
               <li>Problem Solving</li>

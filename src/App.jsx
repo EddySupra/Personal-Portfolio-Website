@@ -1,39 +1,48 @@
-// Portfolio Website - React + Tailwind CSS (Fixed JSX Errors & Home Page Animations)
+// Portfolio Website - React + Tailwind CSS (Fixed Image Paths)
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route, Link, Navigate } from "react-router-dom";
 import { motion } from "framer-motion";
 
+const PageWrapper = ({ children }) => (
+  <div
+    className="min-h-screen bg-cover bg-center pt-32 pb-20 px-4 text-white"
+    style={{ backgroundImage: "url('/wrv.jpg')" }}
+  >
+    {children}
+  </div>
+);
+
 const Home = () => (
-  <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} className="bg-[#0b1f33] text-white min-h-screen pt-32 pb-20 px-4 text-center">
+  <PageWrapper>
     <div className="flex flex-col items-center justify-center px-4">
-      <motion.img 
-        src="/avatar.jpg" 
-        alt="Eduardo Avatar" 
+      <motion.img
+        src="/avatar.jpg"
+        alt="Eduardo Avatar"
         className="w-32 h-32 rounded-full border-4 border-white shadow-lg mb-6 backdrop-blur-sm transition-transform duration-300 hover:scale-105 hover:rotate-1"
-        initial={{ scale: 0 }} 
-        animate={{ scale: 1 }} 
-        transition={{ delay: 0.2, duration: 0.6 }} 
+        initial={{ scale: 0 }}
+        animate={{ scale: 1 }}
+        transition={{ delay: 0.2, duration: 0.6 }}
       />
-      <motion.h1 
+      <motion.h1
         className="text-4xl font-bold mb-2"
-        initial={{ y: -50, opacity: 0 }} 
-        animate={{ y: 0, opacity: 1 }} 
+        initial={{ y: -50, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
         transition={{ delay: 0.4, duration: 0.8 }}
       >
         Eduardo Casas-Gabirio
       </motion.h1>
-      <motion.p 
+      <motion.p
         className="text-xl italic mb-4 text-yellow-300"
-        initial={{ opacity: 0 }} 
-        animate={{ opacity: 1 }} 
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
         transition={{ delay: 0.8, duration: 0.8 }}
       >
         Creating a Better World, One Line at a Time
       </motion.p>
-      <motion.div 
+      <motion.div
         className="max-w-xl text-gray-300 space-y-5 text-[1.05rem] leading-relaxed text-left"
-        initial={{ opacity: 0 }} 
-        animate={{ opacity: 1 }} 
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
         transition={{ delay: 1.2, duration: 0.8 }}
       >
         <p>
@@ -43,9 +52,8 @@ const Home = () => (
           From responsive websites using <span className="text-yellow-300">React</span> and <span className="text-yellow-300">Tailwind CSS</span> to data-powered tools, I focus on building experiences that are not just functional, but meaningful. Explore my portfolio to see how I integrate <span className="text-yellow-300">game design</span>, <span className="text-yellow-300">AI automation</span>, and <span className="text-yellow-300">data science</span> into user-centered solutions.
         </p>
       </motion.div>
-      
     </div>
-  </motion.div>
+  </PageWrapper>
 );
 
 const Projects = () => (

@@ -105,8 +105,7 @@ const Projects = () => (
            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}  className="bg-white/20 text-white backdrop-blur-md p-6 rounded-lg shadow-md border border-white/10">
       <motion.h1 className="text-4xl font-bold text-center mb-6" initial={{ y: -40, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.4, duration: 0.8 }}>
         LeadChecker
-      </motion.h1>
-      <p className="text-white-300 mb-4">A full-featured, CSUF-student-specific marketplace built using a modern Vue + Node stack with real-time chat and notifications.</p>       
+      </motion.h1>      
       <motion.div className="max-w-4xl mx-auto space-y-6 text-gray-300 text-[1.05rem]" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.6, duration: 0.8 }}>
         <div>
           <h2 className="text-2xl font-semibold text-yellow-300 mb-2">Technologies Used</h2>
@@ -191,7 +190,7 @@ const ProjectTodo = () => (
     const ProjectWeather = () => (
 <PageWrapper>
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}  className="bg-white/20 text-white backdrop-blur-md p-6 rounded-lg shadow-md border border-white/10">
-      <motion.h1 className="text-4xl font-bold text-center mb-6" initial={{ y: -40, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.4, duration: 0.8 }}>
+      <motion.h1 className="text-2xl font-semibold mb-2 text-yellow-300">
         LeadChecker
       </motion.h1>
       <p className="text-white-300 mb-4">A full-featured, CSUF-student-specific marketplace built using a modern Vue + Node stack with real-time chat and notifications.</p>

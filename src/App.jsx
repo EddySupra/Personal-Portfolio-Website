@@ -107,8 +107,7 @@ const Projects = () => (
       <motion.h1 className="text-4xl font-bold text-center mb-6" initial={{ y: -40, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.4, duration: 0.8 }}>
         LeadChecker
       </motion.h1>
-      <p className="text-white-300 mb-4">Form-filler-Bot is a Python-based automation tool designed to streamline the process of populating web forms by programmatically injecting data sourced from a Google Sheet. It orchestrates a headless (or GUI) Chrome session via Selenium WebDriver, reads rows from a spreadsheet using the Google Sheets API (authenticated via a service account), fills out each form field in sequence, captures screenshots of each submission, and can produce basic visual reports of success/failure rates.</p>       
-      <motion.div className="max-w-4xl mx-auto space-y-6 text-gray-300 text-[1.05rem]" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.6, duration: 0.8 }}>
+        <p className="text-white-300 mb-4">A full-featured, CSUF-student-specific marketplace built using a modern Vue + Node stack with real-time chat and notifications.</p>        <motion.div className="max-w-4xl mx-auto space-y-6 text-gray-300 text-[1.05rem]" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.6, duration: 0.8 }}>
         <div>
           <h2 className="text-2xl font-semibold text-yellow-300 mb-2">Technologies Used</h2>
           <ul className="list-disc list-inside space-y-1 text-sm">

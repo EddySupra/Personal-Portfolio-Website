@@ -67,7 +67,7 @@ const Projects = () => (
         My Projects
       </motion.h1>
 
-<div className="max-w-4xl mx-auto space-y-10">
+      <div className="max-w-4xl mx-auto space-y-10">
         <motion.div className="bg-white/10 backdrop-blur-md p-6 rounded-lg shadow-md border border-white/10" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.6, duration: 0.8 }}>
           <h2 className="text-2xl font-semibold mb-2 text-yellow-300">TufferUp</h2>
           <p className="text-gray-300 mb-4">A full-featured, CSUF-student-specific marketplace built using a modern Vue + Node stack with real-time chat and notifications.</p>
@@ -101,20 +101,50 @@ const Projects = () => (
           <Link to="/projects/todo" className="text-yellow-400 underline">View More</Link>
         </motion.div>
 
-        <motion.div className="bg-white/10 backdrop-blur-md p-6 rounded-lg shadow-md border border-white/10" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.9, duration: 0.8 }}>
-          <h2 className="text-2xl font-semibold mb-2">LeadChecker</h2>
-          <p className="text-gray-300 mb-2">A tool for tracking and verifying the quality of marketing leads through automated analysis.</p>
-          <ul className="list-disc list-inside text-gray-400 text-sm mb-2">
-            <li><strong>Technologies:</strong> Node.js, Express, MongoDB, Chart.js</li>
-            <li><strong>Challenges:</strong> Data visualization, lead scoring algorithm</li>
-            <li><strong>Outcome:</strong> Improved conversion rates through cleaner lead pipelines</li>
+           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}  className="bg-white/10 backdrop-blur-md p-6 rounded-lg shadow-md border border-white/10">
+      <motion.h1 className="text-4xl font-bold text-center mb-6" initial={{ y: -40, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.4, duration: 0.8 }}>
+        LeadChecker
+      </motion.h1>
+      <motion.div className="max-w-4xl mx-auto space-y-6 text-gray-300 text-[1.05rem]" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.6, duration: 0.8 }}>
+        <div>
+          <h2 className="text-2xl font-semibold text-yellow-300 mb-2">Technologies Used</h2>
+          <ul className="list-disc list-inside space-y-1 text-sm">
+            <li><strong>Python 3.x:</strong> Core scripting language for orchestration, data handling, and integration.</li>
+            <li><strong>Selenium WebDriver (ChromeDriver):</strong> Automates browser interactions to locate and populate form fields.</li>
+            <li><strong>gspread & oauth2client:</strong> Authenticate with Google Sheets using a service account JSON.</li>
+            <li><strong>matplotlib & numpy:</strong> Plotting and simple numerical analysis.</li>
+            <li><strong>Pillow (PIL):</strong> Screenshots for audit/debugging.</li>
+            <li><strong>Virtualenv:</strong> Reproducible isolated environments.</li>
           </ul>
+        </div>
+
+        <div>
+          <h2 className="text-2xl font-semibold text-yellow-300 mt-6 mb-2">Challenges Faced</h2>
+          <ul className="list-disc list-inside space-y-1 text-sm">
+            <li><strong>Google Service Account Authentication:</strong> OAuth2 config and refresh logic in headless sessions.</li>
+            <li><strong>Dynamic Form Elements:</strong> Required explicit waits to avoid timing issues and stale elements.</li>
+            <li><strong>ChromeDriver Compatibility:</strong> Version syncing across environments was handled automatically.</li>
+            <li><strong>Error Handling & Retries:</strong> Retry loops and logging helped reduce disruptions.</li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 className="text-2xl font-semibold text-yellow-300 mt-6 mb-2">Outcomes</h2>
+          <ul className="list-disc list-inside space-y-1 text-sm">
+            <li><strong>End-to-End Automation:</strong> Transformed manual spreadsheet submission into full automation.</li>
+            <li><strong>Audit-Grade Records:</strong> Visual records of each form submission with statistics.</li>
+            <li><strong>Modular Architecture:</strong> Easy to extend new form types and data sources.</li>
+            <li><strong>Reproducible Setup:</strong> New users can start with setup instructions in minutes.</li>
+          </ul>
+        </div>
+        </motion.div>
           <Link to="/projects/weather" className="text-yellow-400 underline">View More</Link>
         </motion.div>
       </div>
     </motion.div>
   </PageWrapper>
 );
+
 
 const ProjectTodo = () => (
   <PageWrapper>
@@ -156,26 +186,52 @@ const ProjectTodo = () => (
     </PageWrapper>
   );
 
-  const ProjectWeather = () => (
-    <PageWrapper>
-      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}  className="bg-white/10 backdrop-blur-md p-6 rounded-lg shadow-md border border-white/10">
-        <motion.h1 className="text-4xl font-bold text-center mb-6" initial={{ y: -40, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.4, duration: 0.8 }}>
-          LeadChecker
-        </motion.h1>
-        <motion.p className="max-w-3xl mx-auto text-gray-300 mb-4" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.6, duration: 0.8 }}>
-          LeadChecker is a backend-integrated web tool designed to monitor, validate, and score incoming marketing leads using smart filters and real-time dashboards.
-        </motion.p>
-        <motion.ul className="max-w-3xl mx-auto text-gray-400 text-sm list-disc list-inside mb-6" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.7, duration: 0.8 }}>
-          <li><strong>Technologies Used:</strong> Node.js, Express, MongoDB, Chart.js</li>
-          <li><strong>Challenges Faced:</strong> Backend logic for scoring, scalable API design, and UI performance</li>
-          <li><strong>Outcome:</strong> Accurate and insightful lead tracking for marketing optimization</li>
-        </motion.ul>
+    const ProjectWeather = () => (
+<PageWrapper>
+    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}  className="bg-white/10 backdrop-blur-md p-6 rounded-lg shadow-md border border-white/10">
+      <motion.h1 className="text-4xl font-bold text-center mb-6" initial={{ y: -40, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.4, duration: 0.8 }}>
+        LeadChecker
+      </motion.h1>
+      <motion.div className="max-w-4xl mx-auto space-y-6 text-gray-300 text-[1.05rem]" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.6, duration: 0.8 }}>
+        <div>
+          <h2 className="text-2xl font-semibold text-yellow-300 mb-2">Technologies Used</h2>
+          <ul className="list-disc list-inside space-y-1 text-sm">
+            <li><strong>Python 3.x:</strong> Core scripting language for orchestration, data handling, and integration.</li>
+            <li><strong>Selenium WebDriver (ChromeDriver):</strong> Automates browser interactions to locate and populate form fields.</li>
+            <li><strong>gspread & oauth2client:</strong> Authenticate with Google Sheets using a service account JSON.</li>
+            <li><strong>matplotlib & numpy:</strong> Plotting and simple numerical analysis.</li>
+            <li><strong>Pillow (PIL):</strong> Screenshots for audit/debugging.</li>
+            <li><strong>Virtualenv:</strong> Reproducible isolated environments.</li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 className="text-2xl font-semibold text-yellow-300 mt-6 mb-2">Challenges Faced</h2>
+          <ul className="list-disc list-inside space-y-1 text-sm">
+            <li><strong>Google Service Account Authentication:</strong> OAuth2 config and refresh logic in headless sessions.</li>
+            <li><strong>Dynamic Form Elements:</strong> Required explicit waits to avoid timing issues and stale elements.</li>
+            <li><strong>ChromeDriver Compatibility:</strong> Version syncing across environments was handled automatically.</li>
+            <li><strong>Error Handling & Retries:</strong> Retry loops and logging helped reduce disruptions.</li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 className="text-2xl font-semibold text-yellow-300 mt-6 mb-2">Outcomes</h2>
+          <ul className="list-disc list-inside space-y-1 text-sm">
+            <li><strong>End-to-End Automation:</strong> Transformed manual spreadsheet submission into full automation.</li>
+            <li><strong>Audit-Grade Records:</strong> Visual records of each form submission with statistics.</li>
+            <li><strong>Modular Architecture:</strong> Easy to extend new form types and data sources.</li>
+            <li><strong>Reproducible Setup:</strong> New users can start with setup instructions in minutes.</li>
+          </ul>
+        </div>
+
         <motion.img src="/screenshots/leadchecker.png" alt="LeadChecker Screenshot" className="mx-auto rounded mb-6 max-w-full h-auto" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.8, duration: 0.8 }} />
-        <motion.a href="https://github.com/EddySupra/Lead-Checker" target="_blank" rel="noopener noreferrer" className="text-yellow-400 underline block text-center" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.0, duration: 0.8 }}>
+        <motion.a href="https://github.com/EddySupra/Form-filler-Bot" target="_blank" rel="noopener noreferrer" className="text-yellow-400 underline block text-center" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.0, duration: 0.8 }}>
           View GitHub Repository
         </motion.a>
       </motion.div>
-    </PageWrapper>
+    </motion.div>
+  </PageWrapper>
   );
 
   const About = () => (

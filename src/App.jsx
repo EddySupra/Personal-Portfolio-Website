@@ -235,7 +235,7 @@ const ProjectTodo = () => (
           transition={{ duration: 0.8 }} 
           className="text-xl font-extrabold tracking-wide leading-tight">
           Eduardo Casas-Gabirio<br />
-          <span className="text-sm font-medium text-gray-300">Computer Science Student</span>
+          <span className="text-sm font-medium text-yellow-300">Computer Science Student</span>
         </motion.h1>
         <div className="hidden md:flex space-x-4 text-base font-medium">
           <Link to="/" className="hover:text-yellow-300 transition transform hover:scale-105 duration-200 ease-in-out">Home</Link>

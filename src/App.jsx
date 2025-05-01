@@ -15,7 +15,7 @@ const PageWrapper = ({ children }) => (
 // Example:
 const Home = () => (
   <PageWrapper>
-    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} className="bg-[#0b1f33] text-white min-h-screen pt-32 pb-20 px-4 text-center">
+    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} className="text-center">
       <div className="flex flex-col items-center justify-center px-4">
         <motion.img 
           src="/avatar.jpg" 

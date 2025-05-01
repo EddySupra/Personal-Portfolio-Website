@@ -109,17 +109,6 @@ const Projects = () => (
             <li><strong>Challenges:</strong> Data visualization, lead scoring algorithm</li>
             <li><strong>Outcome:</strong> Improved conversion rates through cleaner lead pipelines</li>
           </ul>
-          <Link to="/projects/todo" className="text-yellow-400 underline">View More</Link>
-        </motion.div>
-
-        <motion.div className="bg-white/10 backdrop-blur-md p-6 rounded-lg shadow-md border border-white/10" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.9, duration: 0.8 }}>
-          <h2 className="text-2xl font-semibold mb-2">LeadChecker</h2>
-          <p className="text-gray-300 mb-2">A tool for tracking and verifying the quality of marketing leads through automated analysis.</p>
-          <ul className="list-disc list-inside text-gray-400 text-sm mb-2">
-            <li><strong>Technologies:</strong> Node.js, Express, MongoDB, Chart.js</li>
-            <li><strong>Challenges:</strong> Data visualization, lead scoring algorithm</li>
-            <li><strong>Outcome:</strong> Improved conversion rates through cleaner lead pipelines</li>
-          </ul>
           <Link to="/projects/weather" className="text-yellow-400 underline">View More</Link>
         </motion.div>
       </div>

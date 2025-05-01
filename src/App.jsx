@@ -7,15 +7,13 @@ const Home = () => (
   <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} className="bg-[#0b1f33] text-white min-h-screen pt-32 pb-20 px-4 text-center">
     <div className="flex flex-col items-center justify-center px-4">
       <motion.img 
-        src="/avatar.jpg"
+        src="/avatar.jpg" 
         alt="Eduardo Avatar" 
         className="w-32 h-32 rounded-full border-4 border-white shadow-lg mb-6 backdrop-blur-sm transition-transform duration-300 hover:scale-105 hover:rotate-1"
         initial={{ scale: 0 }} 
         animate={{ scale: 1 }} 
         transition={{ delay: 0.2, duration: 0.6 }} 
       />
-
-
       <motion.h1 
         className="text-4xl font-bold mb-2"
         initial={{ y: -50, opacity: 0 }} 
@@ -263,4 +261,3 @@ const App = () => {
 };
 
 export default App;
-

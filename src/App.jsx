@@ -106,7 +106,7 @@ const Projects = () => (
       <motion.h1 className="text-4xl font-bold text-center mb-6" initial={{ y: -40, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.4, duration: 0.8 }}>
         LeadChecker
       </motion.h1>      
-      <motion.div className="max-w-4xl mx-auto space-y-6 text-gray-300 text-[1.05rem]" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.6, duration: 0.8 }}>
+      <motion.div className="max-w-4xl mx-auto space-y-6 text-white-300 text-[1.05rem]" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.6, duration: 0.8 }}>
         <div>
           <h2 className="text-2xl font-semibold text-yellow-300 mb-2">Technologies Used</h2>
           <ul className="list-disc list-inside space-y-1 text-sm">
@@ -154,7 +154,7 @@ const ProjectTodo = () => (
           <p className="text-gray-300 mb-4">Form-filler-Bot is a Python-based automation tool designed to streamline the process of populating web forms by programmatically injecting data sourced from a Google Sheet. It orchestrates a headless (or GUI) Chrome session via Selenium WebDriver, reads rows from a spreadsheet using the Google Sheets API (authenticated via a service account), fills out each form field in sequence, captures screenshots of each submission, and can produce basic visual reports of success/failure rates.</p>
           
           <h3 className="text-lg font-bold text-white mb-1">Technologies Used</h3>
-          <ul className="list-disc list-inside text-gray-400 text-sm mb-4 space-y-1">
+          <ul className="list-disc list-inside text-white-400 text-sm mb-4 space-y-1">
             <li><strong>Frontend:</strong> Vue.js 3 + Vite, Vue Router, Pinia, Axios</li>
             <li><strong>Backend:</strong> Node.js + Express.js, MongoDB Atlas (via Mongoose)</li>
             <li><strong>Authentication:</strong> Passport.js, express-session, MongoDB session store</li>
@@ -266,7 +266,7 @@ const ProjectTodo = () => (
         <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
           <div className="bg-white/20 text-black backdrop-blur-md p-6 rounded-lg shadow-md border border-white/10">
             <h2 className="text-2xl font-semibold mb-4 text-yellow-300">Technical Skills</h2>
-            <ul className="list-disc list-inside text-gray-300 space-y-2 text-sm">
+            <ul className="list-disc list-inside text-white-300 space-y-2 text-sm">
               <li><strong>Programming & Scripting:</strong> Python, C++, C#, JavaScript, R, Lua</li>
               <li><strong>Algorithms & Math:</strong> Linear Algebra, Statistics, Optimization, Geometry, Physics, Pathfinding</li>
               <li><strong>Libraries & Frameworks:</strong> React, Tailwind CSS, TensorFlow, PyTorch, pandas, NumPy</li>
@@ -277,7 +277,7 @@ const ProjectTodo = () => (
           </div>
           <div className="bg-white/20 text-black backdrop-blur-md p-6 rounded-lg shadow-md border border-white/10">
             <h2 className="text-2xl font-semibold mb-4 text-yellow-300">Soft Skills</h2>
-            <ul className="list-disc list-inside text-gray-300 space-y-2 text-sm">
+            <ul className="list-disc list-inside text-white-300 space-y-2 text-sm">
               <li>Problem Solving</li>
               <li>Communication & Team Collaboration</li>
               <li>Adaptability & Continuous Learning</li>

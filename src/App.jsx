@@ -191,7 +191,7 @@ const Contact = () => (
   </motion.div>
 );
 
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);

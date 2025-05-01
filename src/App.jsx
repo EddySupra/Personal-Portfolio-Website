@@ -15,7 +15,7 @@ const PageWrapper = ({ children }) => (
 // Example:
 const Home = () => (
   <PageWrapper>
-    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}  className="bg-white/10 backdrop-blur-md p-6 rounded-lg shadow-md border border-white/10">
+    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}  className="bg-white/20 text-black backdrop-blur-md p-6 rounded-lg shadow-md border border-white/10">
       <div className="flex flex-col items-center justify-center px-4">
         <motion.img 
           src="/avatar.jpg" 
@@ -62,13 +62,13 @@ const Home = () => (
 
 const Projects = () => (
   <PageWrapper>
-    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}  className="bg-white/10 backdrop-blur-md p-6 rounded-lg shadow-md border border-white/10">
+    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}  className="bg-white/20 text-black backdrop-blur-md p-6 rounded-lg shadow-md border border-white/10">
       <motion.h1 className="text-4xl font-bold text-center mb-8" initial={{ y: -40, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.4, duration: 0.8 }}>
         My Projects
       </motion.h1>
 
       <div className="max-w-4xl mx-auto space-y-10">
-        <motion.div className="bg-white/10 backdrop-blur-md p-6 rounded-lg shadow-md border border-white/10" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.6, duration: 0.8 }}>
+        <motion.div className="bg-white/20 text-black backdrop-blur-md p-6 rounded-lg shadow-md border border-white/10" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.6, duration: 0.8 }}>
           <h2 className="text-2xl font-semibold mb-2 text-yellow-300">TufferUp</h2>
           <p className="text-gray-300 mb-4">A full-featured, CSUF-student-specific marketplace built using a modern Vue + Node stack with real-time chat and notifications.</p>
           
@@ -101,7 +101,7 @@ const Projects = () => (
           <Link to="/projects/todo" className="text-yellow-400 underline">View More</Link>
         </motion.div>
 
-           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}  className="bg-white/10 backdrop-blur-md p-6 rounded-lg shadow-md border border-white/10">
+           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}  className="bg-white/20 text-black backdrop-blur-md p-6 rounded-lg shadow-md border border-white/10">
       <motion.h1 className="text-4xl font-bold text-center mb-6" initial={{ y: -40, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.4, duration: 0.8 }}>
         LeadChecker
       </motion.h1>
@@ -148,7 +148,7 @@ const Projects = () => (
 
 const ProjectTodo = () => (
   <PageWrapper>
-    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}  className="bg-white/10 backdrop-blur-md p-6 rounded-lg shadow-md border border-white/10">
+    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}  className="bg-white/20 text-black backdrop-blur-md p-6 rounded-lg shadow-md border border-white/10">
       <h2 className="text-2xl font-semibold mb-2 text-yellow-300">TufferUp</h2>
           <p className="text-gray-300 mb-4">A full-featured, CSUF-student-specific marketplace built using a modern Vue + Node stack with real-time chat and notifications.</p>
           
@@ -188,7 +188,7 @@ const ProjectTodo = () => (
 
     const ProjectWeather = () => (
 <PageWrapper>
-    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}  className="bg-white/10 backdrop-blur-md p-6 rounded-lg shadow-md border border-white/10">
+    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}  className="bg-white/20 text-black backdrop-blur-md p-6 rounded-lg shadow-md border border-white/10">
       <motion.h1 className="text-4xl font-bold text-center mb-6" initial={{ y: -40, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.4, duration: 0.8 }}>
         LeadChecker
       </motion.h1>
@@ -236,7 +236,7 @@ const ProjectTodo = () => (
 
   const About = () => (
     <PageWrapper>
-      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}  className="bg-white/10 backdrop-blur-md p-6 rounded-lg shadow-md border border-white/10">
+      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}  className="bg-white/20 text-black backdrop-blur-md p-6 rounded-lg shadow-md border border-white/10">
         <motion.h1 className="text-4xl font-bold mb-4" initial={{ y: -40, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.3, duration: 0.8 }}>
           About Me
         </motion.h1>
@@ -257,12 +257,12 @@ const ProjectTodo = () => (
 
   const Skills = () => (
     <PageWrapper>
-      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}  className="bg-white/10 backdrop-blur-md p-6 rounded-lg shadow-md border border-white/10">
+      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}  className="bg-white/20 text-black backdrop-blur-md p-6 rounded-lg shadow-md border border-white/10">
         <motion.h1 className="text-4xl font-bold mb-6" initial={{ y: -40, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.3, duration: 0.8 }}>
           My Skills
         </motion.h1>
         <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
-          <div className="bg-white/10 backdrop-blur-md p-6 rounded-lg shadow-md border border-white/10">
+          <div className="bg-white/20 text-black backdrop-blur-md p-6 rounded-lg shadow-md border border-white/10">
             <h2 className="text-2xl font-semibold mb-4 text-yellow-300">Technical Skills</h2>
             <ul className="list-disc list-inside text-gray-300 space-y-2 text-sm">
               <li><strong>Programming & Scripting:</strong> Python, C++, C#, JavaScript, R, Lua</li>
@@ -273,7 +273,7 @@ const ProjectTodo = () => (
               <li><strong>Visualization:</strong> Jupyter, Tableau, Power BI, Post-processing Effects</li>
             </ul>
           </div>
-          <div className="bg-white/10 backdrop-blur-md p-6 rounded-lg shadow-md border border-white/10">
+          <div className="bg-white/20 text-black backdrop-blur-md p-6 rounded-lg shadow-md border border-white/10">
             <h2 className="text-2xl font-semibold mb-4 text-yellow-300">Soft Skills</h2>
             <ul className="list-disc list-inside text-gray-300 space-y-2 text-sm">
               <li>Problem Solving</li>
@@ -290,7 +290,7 @@ const ProjectTodo = () => (
 
   const Contact = () => (
     <PageWrapper>
-      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}  className="bg-white/10 backdrop-blur-md p-6 rounded-lg shadow-md border border-white/10">
+      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}  className="bg-white/20 text-black backdrop-blur-md p-6 rounded-lg shadow-md border border-white/10">
         <motion.h1 className="text-4xl font-bold mb-6" initial={{ y: -40, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.3, duration: 0.8 }}>
           Contact Me
         </motion.h1>
@@ -324,7 +324,7 @@ const ProjectTodo = () => (
     }, []);
   
     return (
-      <nav className={`transition-all duration-300 ${scrolled ? 'bg-white/10 shadow-lg' : 'bg-white/5'} text-white px-4 py-3 flex justify-between items-center fixed top-0 left-0 w-full z-50 backdrop-blur-sm border-b border-white/20`}>
+      <nav className={`transition-all duration-300 ${scrolled ? 'bg-white/20 text-black shadow-lg' : 'bg-white/5'} text-white px-4 py-3 flex justify-between items-center fixed top-0 left-0 w-full z-50 backdrop-blur-sm border-b border-white/20`}>
         <motion.h1 
           initial={{ opacity: 0, y: -20 }} 
           animate={{ opacity: 1, y: 0 }} 
@@ -348,7 +348,7 @@ const ProjectTodo = () => (
           </button>
         </div>
         {isOpen && (
-          <div className="absolute top-full left-0 w-full bg-[#0b1f33] text-white flex flex-col items-center space-y-4 py-4 md:hidden border-t border-white">
+          <div className="absolute top-full left-0 w-full bg-white/20 text-black text-white flex flex-col items-center space-y-4 py-4 md:hidden border-t border-white">
             <Link to="/" onClick={() => setIsOpen(false)}>Home</Link>
             <Link to="/about" onClick={() => setIsOpen(false)}>About</Link>
             <Link to="/projects" onClick={() => setIsOpen(false)}>Projects</Link>
@@ -379,5 +379,8 @@ const App = () => {
     </Router>
   );
 };
+
+export default App;
+
 
 export default App;

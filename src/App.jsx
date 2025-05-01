@@ -68,7 +68,7 @@ const Projects = () => (
       </motion.h1>
 
       <div className="max-w-4xl mx-auto space-y-10">
-        <motion.div className="bg-[#112233] p-6 rounded-lg shadow-md" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.6, duration: 0.8 }}>
+        <motion.div className="bg-white/10 backdrop-blur-md p-6 rounded-lg shadow-md border border-white/10" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.6, duration: 0.8 }}>
           <h2 className="text-2xl font-semibold mb-2">TufferUp</h2>
           <p className="text-gray-300 mb-2">An OfferUp clone tailored for CSUF students to buy and sell items within their campus community.</p>
           <ul className="list-disc list-inside text-gray-400 text-sm mb-2">
@@ -79,7 +79,7 @@ const Projects = () => (
           <Link to="/projects/todo" className="text-yellow-400 underline">View More</Link>
         </motion.div>
 
-        <motion.div className="bg-[#112233] p-6 rounded-lg shadow-md" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.9, duration: 0.8 }}>
+        <motion.div className="bg-white/10 backdrop-blur-md p-6 rounded-lg shadow-md border border-white/10" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.9, duration: 0.8 }}>
           <h2 className="text-2xl font-semibold mb-2">LeadChecker</h2>
           <p className="text-gray-300 mb-2">A tool for tracking and verifying the quality of marketing leads through automated analysis.</p>
           <ul className="list-disc list-inside text-gray-400 text-sm mb-2">
@@ -166,7 +166,7 @@ const ProjectTodo = () => (
           My Skills
         </motion.h1>
         <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
-          <div className="bg-[#112233] p-6 rounded-lg shadow-md">
+          <div className="bg-white/10 backdrop-blur-md p-6 rounded-lg shadow-md border border-white/10">
             <h2 className="text-2xl font-semibold mb-4 text-yellow-300">Technical Skills</h2>
             <ul className="list-disc list-inside text-gray-300 space-y-2 text-sm">
               <li><strong>Programming & Scripting:</strong> Python, C++, C#, JavaScript, R, Lua</li>
@@ -177,7 +177,7 @@ const ProjectTodo = () => (
               <li><strong>Visualization:</strong> Jupyter, Tableau, Power BI, Post-processing Effects</li>
             </ul>
           </div>
-          <div className="bg-[#112233] p-6 rounded-lg shadow-md">
+          <div className="bg-white/10 backdrop-blur-md p-6 rounded-lg shadow-md border border-white/10">
             <h2 className="text-2xl font-semibold mb-4 text-yellow-300">Soft Skills</h2>
             <ul className="list-disc list-inside text-gray-300 space-y-2 text-sm">
               <li>Problem Solving</li>
@@ -235,7 +235,7 @@ const ProjectTodo = () => (
           transition={{ duration: 0.8 }} 
           className="text-xl font-extrabold tracking-wide leading-tight">
           Eduardo Casas-Gabirio<br />
-          <span className="text-sm font-medium text-yellow-300">Computer Science Student</span>
+          <span className="text-sm font-medium text-gray-300">Computer Science Student</span>
         </motion.h1>
         <div className="hidden md:flex space-x-4 text-base font-medium">
           <Link to="/" className="hover:text-yellow-300 transition transform hover:scale-105 duration-200 ease-in-out">Home</Link>
@@ -285,5 +285,3 @@ const App = () => {
 };
 
 export default App;
-
-

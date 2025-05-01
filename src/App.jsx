@@ -67,14 +67,47 @@ const Projects = () => (
         My Projects
       </motion.h1>
 
-      <div className="max-w-4xl mx-auto space-y-10">
+<div className="max-w-4xl mx-auto space-y-10">
         <motion.div className="bg-white/10 backdrop-blur-md p-6 rounded-lg shadow-md border border-white/10" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.6, duration: 0.8 }}>
-          <h2 className="text-2xl font-semibold mb-2">TufferUp</h2>
-          <p className="text-gray-300 mb-2">An OfferUp clone tailored for CSUF students to buy and sell items within their campus community.</p>
+          <h2 className="text-2xl font-semibold mb-2 text-yellow-300">TufferUp</h2>
+          <p className="text-gray-300 mb-4">A full-featured, CSUF-student-specific marketplace built using a modern Vue + Node stack with real-time chat and notifications.</p>
+          
+          <h3 className="text-lg font-bold text-white mb-1">Technologies Used</h3>
+          <ul className="list-disc list-inside text-gray-400 text-sm mb-4 space-y-1">
+            <li><strong>Frontend:</strong> Vue.js 3 + Vite, Vue Router, Pinia, Axios</li>
+            <li><strong>Backend:</strong> Node.js + Express.js, MongoDB Atlas (via Mongoose)</li>
+            <li><strong>Authentication:</strong> Passport.js, express-session, MongoDB session store</li>
+            <li><strong>Notifications:</strong> Firebase Cloud Messaging (FCM)</li>
+            <li><strong>SSR Auth Views:</strong> EJS templates for login/signup</li>
+            <li><strong>Search:</strong> MongoDB Atlas Search (aggregate().search())</li>
+          </ul>
+
+          <h3 className="text-lg font-bold text-white mb-1">Challenges Faced</h3>
+          <ul className="list-disc list-inside text-gray-400 text-sm mb-4 space-y-1">
+            <li>CSUF-only email registration using Mongoose pre-save hook</li>
+            <li>Image uploads via Base64, managed in a separate model</li>
+            <li>Cross-origin sessions with CORS config and credentialed Axios requests</li>
+            <li>Async threaded messaging with unread flag updates</li>
+            <li>Push notification token management using FCM</li>
+          </ul>
+
+          <h3 className="text-lg font-bold text-white mb-1">Outcomes</h3>
+          <ul className="list-disc list-inside text-gray-400 text-sm space-y-1">
+            <li>Users can register/login, create listings with images, search, and chat</li>
+            <li>Separated concerns between frontend and backend for scalability</li>
+            <li>Agile collaboration using clear dev roles (Scrum Master, QA, etc.)</li>
+            <li>Simple local setup using <code>npm run dev</code> and <code>node server/index.js</code></li>
+          </ul>
+          <Link to="/projects/todo" className="text-yellow-400 underline">View More</Link>
+        </motion.div>
+
+        <motion.div className="bg-white/10 backdrop-blur-md p-6 rounded-lg shadow-md border border-white/10" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.9, duration: 0.8 }}>
+          <h2 className="text-2xl font-semibold mb-2">LeadChecker</h2>
+          <p className="text-gray-300 mb-2">A tool for tracking and verifying the quality of marketing leads through automated analysis.</p>
           <ul className="list-disc list-inside text-gray-400 text-sm mb-2">
-            <li><strong>Technologies:</strong> React, Firebase, Tailwind CSS</li>
-            <li><strong>Challenges:</strong> User authentication, secure messaging, real-time updates</li>
-            <li><strong>Outcome:</strong> A trusted platform for peer-to-peer exchanges at CSUF</li>
+            <li><strong>Technologies:</strong> Node.js, Express, MongoDB, Chart.js</li>
+            <li><strong>Challenges:</strong> Data visualization, lead scoring algorithm</li>
+            <li><strong>Outcome:</strong> Improved conversion rates through cleaner lead pipelines</li>
           </ul>
           <Link to="/projects/todo" className="text-yellow-400 underline">View More</Link>
         </motion.div>
@@ -97,17 +130,35 @@ const Projects = () => (
 const ProjectTodo = () => (
   <PageWrapper>
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}  className="bg-white/10 backdrop-blur-md p-6 rounded-lg shadow-md border border-white/10">
-      <motion.h1 className="text-4xl font-bold text-center mb-6" initial={{ y: -40, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.4, duration: 0.8 }}>
-        TufferUp
-      </motion.h1>
-      <motion.p className="max-w-3xl mx-auto text-gray-300 mb-4" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.6, duration: 0.8 }}>
-        TufferUp is an OfferUp clone specifically designed for CSUF students. It enables easy, secure, and fast item trading between students within the campus.
-      </motion.p>
-      <motion.ul className="max-w-3xl mx-auto text-gray-400 text-sm list-disc list-inside mb-6" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.7, duration: 0.8 }}>
-        <li><strong>Technologies Used:</strong> React, Firebase, Tailwind CSS</li>
-        <li><strong>Challenges Faced:</strong> Creating authentication, real-time chat, and geo-filtered listings</li>
-        <li><strong>Outcome:</strong> A safe and effective solution for student transactions and networking</li>
-      </motion.ul>
+      <h2 className="text-2xl font-semibold mb-2 text-yellow-300">TufferUp</h2>
+          <p className="text-gray-300 mb-4">A full-featured, CSUF-student-specific marketplace built using a modern Vue + Node stack with real-time chat and notifications.</p>
+          
+          <h3 className="text-lg font-bold text-white mb-1">Technologies Used</h3>
+          <ul className="list-disc list-inside text-gray-400 text-sm mb-4 space-y-1">
+            <li><strong>Frontend:</strong> Vue.js 3 + Vite, Vue Router, Pinia, Axios</li>
+            <li><strong>Backend:</strong> Node.js + Express.js, MongoDB Atlas (via Mongoose)</li>
+            <li><strong>Authentication:</strong> Passport.js, express-session, MongoDB session store</li>
+            <li><strong>Notifications:</strong> Firebase Cloud Messaging (FCM)</li>
+            <li><strong>SSR Auth Views:</strong> EJS templates for login/signup</li>
+            <li><strong>Search:</strong> MongoDB Atlas Search (aggregate().search())</li>
+          </ul>
+
+          <h3 className="text-lg font-bold text-white mb-1">Challenges Faced</h3>
+          <ul className="list-disc list-inside text-gray-400 text-sm mb-4 space-y-1">
+            <li>CSUF-only email registration using Mongoose pre-save hook</li>
+            <li>Image uploads via Base64, managed in a separate model</li>
+            <li>Cross-origin sessions with CORS config and credentialed Axios requests</li>
+            <li>Async threaded messaging with unread flag updates</li>
+            <li>Push notification token management using FCM</li>
+          </ul>
+
+          <h3 className="text-lg font-bold text-white mb-1">Outcomes</h3>
+          <ul className="list-disc list-inside text-gray-400 text-sm space-y-1">
+            <li>Users can register/login, create listings with images, search, and chat</li>
+            <li>Separated concerns between frontend and backend for scalability</li>
+            <li>Agile collaboration using clear dev roles (Scrum Master, QA, etc.)</li>
+            <li>Simple local setup using <code>npm run dev</code> and <code>node server/index.js</code></li>
+          </ul>
       <motion.img src="/screenshots/tufferup.png" alt="TufferUp Screenshot" className="mx-auto rounded mb-6 max-w-full h-auto" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.8, duration: 0.8 }} />
       <motion.a href="https://github.com/gwarkentin/TufferUp" target="_blank" rel="noopener noreferrer" className="text-yellow-400 underline block text-center" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.0, duration: 0.8 }}>
         View GitHub Repository

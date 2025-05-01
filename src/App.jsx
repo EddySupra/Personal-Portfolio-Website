@@ -15,7 +15,7 @@ const PageWrapper = ({ children }) => (
 // Example:
 const Home = () => (
   <PageWrapper>
-    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}  className="bg-white/20 text-black backdrop-blur-md p-6 rounded-lg shadow-md border border-white/10">
+    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}  className="bg-white/20 text-white backdrop-blur-md p-6 rounded-lg shadow-md border border-white/10">
       <div className="flex flex-col items-center justify-center px-4">
         <motion.img 
           src="/avatar.jpg" 
@@ -62,13 +62,13 @@ const Home = () => (
 
 const Projects = () => (
   <PageWrapper>
-    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}  className="bg-white/20 text-black backdrop-blur-md p-6 rounded-lg shadow-md border border-white/10">
+    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}  className="bg-white/20 text-white backdrop-blur-md p-6 rounded-lg shadow-md border border-white/10">
       <motion.h1 className="text-4xl font-bold text-center mb-8" initial={{ y: -40, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.4, duration: 0.8 }}>
         My Projects
       </motion.h1>
 
       <div className="max-w-4xl mx-auto space-y-10">
-        <motion.div className="bg-white/20 text-black backdrop-blur-md p-6 rounded-lg shadow-md border border-white/10" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.6, duration: 0.8 }}>
+        <motion.div className="bg-white/20 text-white backdrop-blur-md p-6 rounded-lg shadow-md border border-white/10" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.6, duration: 0.8 }}>
           <h2 className="text-2xl font-semibold mb-2 text-yellow-300">TufferUp</h2>
           <p className="text-gray-300 mb-4">A full-featured, CSUF-student-specific marketplace built using a modern Vue + Node stack with real-time chat and notifications.</p>
           
@@ -101,7 +101,7 @@ const Projects = () => (
           <Link to="/projects/todo" className="text-yellow-400 underline">View More</Link>
         </motion.div>
 
-           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}  className="bg-white/20 text-black backdrop-blur-md p-6 rounded-lg shadow-md border border-white/10">
+           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}  className="bg-white/20 text-white backdrop-blur-md p-6 rounded-lg shadow-md border border-white/10">
       <motion.h1 className="text-4xl font-bold text-center mb-6" initial={{ y: -40, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.4, duration: 0.8 }}>
         LeadChecker
       </motion.h1>
@@ -148,7 +148,7 @@ const Projects = () => (
 
 const ProjectTodo = () => (
   <PageWrapper>
-    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}  className="bg-white/20 text-black backdrop-blur-md p-6 rounded-lg shadow-md border border-white/10">
+    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}  className="bg-white/20 text-white backdrop-blur-md p-6 rounded-lg shadow-md border border-white/10">
       <h2 className="text-2xl font-semibold mb-2 text-yellow-300">TufferUp</h2>
           <p className="text-gray-300 mb-4">A full-featured, CSUF-student-specific marketplace built using a modern Vue + Node stack with real-time chat and notifications.</p>
           
@@ -188,7 +188,7 @@ const ProjectTodo = () => (
 
     const ProjectWeather = () => (
 <PageWrapper>
-    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}  className="bg-white/20 text-black backdrop-blur-md p-6 rounded-lg shadow-md border border-white/10">
+    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}  className="bg-white/20 text-white backdrop-blur-md p-6 rounded-lg shadow-md border border-white/10">
       <motion.h1 className="text-4xl font-bold text-center mb-6" initial={{ y: -40, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.4, duration: 0.8 }}>
         LeadChecker
       </motion.h1>
@@ -236,7 +236,7 @@ const ProjectTodo = () => (
 
   const About = () => (
     <PageWrapper>
-      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}  className="bg-white/20 text-black backdrop-blur-md p-6 rounded-lg shadow-md border border-white/10">
+      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}  className="bg-white/20 text-white backdrop-blur-md p-6 rounded-lg shadow-md border border-white/10">
         <motion.h1 className="text-4xl font-bold mb-4" initial={{ y: -40, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.3, duration: 0.8 }}>
           About Me
         </motion.h1>
@@ -257,7 +257,7 @@ const ProjectTodo = () => (
 
   const Skills = () => (
     <PageWrapper>
-      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}  className="bg-white/20 text-black backdrop-blur-md p-6 rounded-lg shadow-md border border-white/10">
+      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}  className="bg-white/20 text-white backdrop-blur-md p-6 rounded-lg shadow-md border border-white/10">
         <motion.h1 className="text-4xl font-bold mb-6" initial={{ y: -40, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.3, duration: 0.8 }}>
           My Skills
         </motion.h1>
@@ -290,7 +290,7 @@ const ProjectTodo = () => (
 
   const Contact = () => (
     <PageWrapper>
-      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}  className="bg-white/20 text-black backdrop-blur-md p-6 rounded-lg shadow-md border border-white/10">
+      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}  className="bg-white/20 text-white backdrop-blur-md p-6 rounded-lg shadow-md border border-white/10">
         <motion.h1 className="text-4xl font-bold mb-6" initial={{ y: -40, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.3, duration: 0.8 }}>
           Contact Me
         </motion.h1>
@@ -301,7 +301,7 @@ const ProjectTodo = () => (
           <button type="submit" className="bg-yellow-400 text-black px-6 py-2 rounded hover:bg-yellow-500 transition">Send Message</button>
         </motion.form>
         <motion.div className="mt-10 text-center" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.0, duration: 0.8 }}>
-          <h2 className="text-xl font-semibold mb-2">Connect with me</h2>
+          <h2 className="text-white font-semibold mb-2">Connect with me</h2>
           <div className="flex justify-center gap-6 text-yellow-300 text-lg">
             <a href="https://github.com/EddySupra" target="_blank" rel="noopener noreferrer">GitHub</a>
             <a href="https://www.linkedin.com/in/eduardo-casas-710755265/" target="_blank" rel="noopener noreferrer">LinkedIn</a>

@@ -151,7 +151,7 @@ const ProjectTodo = () => (
   <PageWrapper>
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}  className="bg-white/20 text-white backdrop-blur-md p-6 rounded-lg shadow-md border border-white/10">
       <h2 className="text-2xl font-semibold mb-2 text-yellow-300">TufferUp</h2>
-          <p className="text-white-300 mb-4">Form-filler-Bot is a Python-based automation tool designed to streamline the process of populating web forms by programmatically injecting data sourced from a Google Sheet. It orchestrates a headless (or GUI) Chrome session via Selenium WebDriver, reads rows from a spreadsheet using the Google Sheets API (authenticated via a service account), fills out each form field in sequence, captures screenshots of each submission, and can produce basic visual reports of success/failure rates.</p>
+          <p className="text-white-300 mb-4">TufferUp is a full-stack, OfferUp-style marketplace tailored for Cal State Fullerton students, developed as a group project for the CSUF CPSC362 course. It lets users register with their CSUF email, list items for sale (with images and pricing), browse by category or condition, perform keyword searches, and exchange messages—all within a single-page application framework.</p>
           
           <h3 className="text-lg font-bold text-white mb-1">Technologies Used</h3>
           <ul className="list-disc list-inside text-white-400 text-sm mb-4 space-y-1">

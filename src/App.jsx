@@ -179,7 +179,7 @@ const ProjectTodo = () => (
             <li>Agile collaboration using clear dev roles (Scrum Master, QA, etc.)</li>
             <li>Simple local setup using <code>npm run dev</code> and <code>node server/index.js</code></li>
           </ul>
-      <motion.img src="/screenshots/tufferup.png" alt="TufferUp Screenshot" className="mx-auto rounded mb-6 max-w-full h-auto" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.8, duration: 0.8 }} />
+      <motion.img src="/screenshots/tufferup.png" alt="LeadChecker Screenshot" className="mx-auto rounded mb-6 max-w-full h-auto" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.8, duration: 0.8 }} />
       <motion.a href="https://github.com/gwarkentin/TufferUp" target="_blank" rel="noopener noreferrer" className="text-yellow-400 underline block text-center" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.0, duration: 0.8 }}>
         View GitHub Repository
       </motion.a>

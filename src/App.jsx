@@ -11,8 +11,6 @@ const PageWrapper = ({ children }) => (
   </div>
 );
 
-// Define Home, About, Projects, etc. using PageWrapper
-// Example:
 const Home = () => (
   <PageWrapper>
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}  className="bg-white/20 text-white backdrop-blur-md p-6 rounded-lg shadow-md border border-white/10">
@@ -179,7 +177,7 @@ const ProjectTodo = () => (
             <li>Agile collaboration using clear dev roles (Scrum Master, QA, etc.)</li>
             <li>Simple local setup using <code>npm run dev</code> and <code>node server/index.js</code></li>
           </ul>
-      <motion.img src="/screenshots/tufferup.png" alt="LeadChecker Screenshot" className="mx-auto rounded mb-6 max-w-full h-auto" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.8, duration: 0.8 }} />
+       <motion.img src="/screenshots/tufferup.png" alt="LeadChecker Screenshot" className="mx-auto rounded mb-6 max-w-full h-auto" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.8, duration: 0.8 }} />
       <motion.a href="https://github.com/gwarkentin/TufferUp" target="_blank" rel="noopener noreferrer" className="text-yellow-400 underline block text-center" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.0, duration: 0.8 }}>
         View GitHub Repository
       </motion.a>
